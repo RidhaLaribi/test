@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutement - Clinique Dentaire</title>
+    <link rel="stylesheet" href="recrutement.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2>Clinique Dentaire</h2>
+        <ul>
+            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="manage-patients.html">Les Patients</a></li>
+            <li><a href="#">Les rendez vous</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="recrutement.html">Recrutement</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Recrutement</h1>
+            <p>Rejoignez notre équipe pour offrir les meilleurs soins dentaires !</p>
+        </header>
+        
+        <section class="job-application">
+            <h2>Formulaire de Candidature</h2>
+            <form action="#" method="POST">
+                <div class="input-field">
+                    <label for="poste">Poste</label>
+                    <select id="poste" name="poste" required>
+                        <option value="dentist">Dentiste</option>
+                        <option value="receptionist">Réceptionniste</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                </div>
+                
+                <div class="input-field">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+                </div>
+                
+                <div class="input-field">
+                    <label for="age">Âge</label>
+                    <input type="number" id="age" name="age" placeholder="Entrez votre âge" min="18" required>
+                </div>
+                
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="telephone">Numéro de Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone" required>
+                </div>
+                
+                <div class="input-field">
+                    <label for="salaire">Salaire Proposé</label>
+                    <input type="number" id="salaire" name="salaire" placeholder="Entrez le salaire proposé" min="0" required>
+                </div>
+                
+                <div class="input-field">
+                    <label for="username">Nom d'Utilisateur</label>
+                    <input type="text" id="username" name="username" placeholder="Choisissez un nom d'utilisateur" required>
+                </div>
+                
+                <div class="input-field">
+                    <label for="password">Mot de Passe</label>
+                    <input type="password" id="password" name="password" placeholder="Choisissez un mot de passe" required>
+                </div>
+
+                <div class="input-field">
+                    <input type="submit" value="Soumettre la Candidature">
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
